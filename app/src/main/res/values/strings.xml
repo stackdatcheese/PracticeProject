@@ -2,7 +2,13 @@
 <resources>
 
     <string name="app_name">PracticeProject</string>
-    <string name="fortune">Happy Android Hacking!</string>
+    <string name="fortune">Mama Said Knock You Out</string>
     <string name="action_settings">Settings</string>
+    <string name="feedbacktype">Surface Type</string>
+    <string name="feedbacktype1">Hard Surface</string>
+    <string name="feedbacktype2">Soft Surface</string>
+    <string name="feedbacktype3">No Surface</string>
+    <string name="feedbacktitle">Player Name</string>
+    <string name="feedbackname">Mr. Bonzai</string>
 
 </resources>

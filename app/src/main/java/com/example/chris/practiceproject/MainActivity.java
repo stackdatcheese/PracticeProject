@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 
@@ -39,7 +42,24 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void toggleFortune(View view) {
+    public void bonzai(View button) {
+        final EditText nameField = (EditText) findViewById(R.id.EditTextName);
+        String name = nameField.getText().toString();
+
+        final Spinner feedbackSpinner = (Spinner) findViewById(R.id.spinner);
+        String feedbackType = feedbackSpinner.getSelectedItem().toString();
+
+        final CheckBox responseCheckbox = (CheckBox) findViewById(R.id.checkBox);
+        boolean bRequiresResponse = responseCheckbox.isChecked();
+
+        final CheckBox responseCheckbox2 = (CheckBox) findViewById(R.id.checkBox2);
+        boolean bRequiresResponse2 = responseCheckbox.isChecked();
+
+        final CheckBox responseCheckbox3 = (CheckBox) findViewById(R.id.checkBox3);
+        boolean bRequiresResponse3 = responseCheckbox.isChecked();
+    }
+
+/*    public void toggleFortune(View view) {
         TextView fortune = (TextView) findViewById(R.id.fortune_text);
         ImageView cookie = (ImageView) findViewById(R.id.fortune_view);
 
@@ -51,5 +71,5 @@ public class MainActivity extends Activity {
             fortune.setVisibility(View.GONE);
             cookie.setImageResource(R.drawable.uncracked);
         }
-    }
+    }*/
 }
